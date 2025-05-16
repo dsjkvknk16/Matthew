@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matthew | Luxury Real Estate & Airbnb Optimization</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #e74c3c;
+            --accent: #3498db;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --highlight: #fffde7;
+        }
+        
+        body {
+            font-family: 'Raleway', sans-serif;
+            line-height: 1.8;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0;
+            color: var(--dark);
+            background-color: #fafafa;
+            overflow-x: hidden;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 60px 20px 40px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::after {
+            content: "";
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: #fafafa;
+            transform: skewY(-3deg);
+            z-index: 1;
+        }
+        
+        .profile-container {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 25px;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .profile-pic {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            margin: 10px 0 5px;
+            color: white;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .tagline {
+            font-style: italic;
+            font-weight: 300;
+            font-size: 1.2rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 2;
+        }
+        
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--secondary);
+            margin: 40px 0 20px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        h2::after {
+            content: "";
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60%;
+            height: 3px;
+            background: var(--secondary);
+        }
+        
+        .intro {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin: 30px 20px;
+            position: relative;
+            z-index: 3;
+        }
+        
+        .highlight {
+            background: var(--highlight);
+            padding: 2px 5px;
+            font-weight: 600;
+        }
+        
+        .contact {
+            margin: 60px 20px;
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact h2 {
+            color: white;
+        }
+        
+        .contact h2::after {
+            background: white;
+        }
+        
+        .emoji {
+            font-size: 1.2em;
+        }
+        
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        a:hover {
+            color: var(--secondary);
+            text-decoration: underline;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 40px 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+            flex: 1;
+            min-width: 150px;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--secondary);
+            margin-bottom: 5px;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            opacity: 0.8;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .intro {
+                padding: 25px;
+                margin: 20px 10px;
+            }
+            
+            .stats {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile-container">
+            <img src="https://i.imgur.com/phZDA7w.jpeg" 
+                 alt="Matthew - Luxury Real Estate Expert" 
+                 class="profile-pic">
+        </div>
+        <h1>Matthew Louis <span class="emoji">🏡</span></h1>
+        <p class="tagline"><em>Wharton PhD | Airbnb Optimization Specialist | Luxury Property Investor</em></p>
+    </header>
+
+    <div class="intro">
+        <h2>About Me</h2>
+        <p>
+            Bonjour! I'm a <span class="highlight">41-year-old French entrepreneur</span> who's been mastering the U.S. real estate market for 17 years. 
+            After earning my doctorate in Finance at <span class="highlight">UPenn's Wharton School</span> (where I learned to turn numbers into narratives), 
+            I discovered my true passion: transforming properties into <span class="highlight">high-performance assets</span>. Today, I combine Wall Street analytics with Parisian elegance to deliver exceptional returns.
+        </p>
+    </div>
+
+    <div class="stats">
+        <div class="stat-item">
+            <div class="stat-number">17+</div>
+            <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">$42M</div>
+            <div class="stat-label">Assets Managed</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">92%</div>
+            <div class="stat-label">Occupancy Rate</div>
+        </div>
+    </div>
+
+    <div class="intro">
+        <h2>Strategic Property Optimization</h2>
+        <p>
+            I've developed a proprietary <span class="highlight">Airbnb Performance Matrix</span> that maximizes rental income while minimizing vacancy. My approach goes beyond basic management:
+        </p>
+        <ul>
+            <li><strong>Revenue Architecture:</strong> Dynamic pricing algorithms that adjust to 27 market variables</li>
+            <li><strong>Design Psychology:</strong> Staging that increases booking conversion by 40%</li>
+            <li><strong>Seamless Operations:</strong> My concierge team handles everything from key exchanges to crisis management</li>
+        </ul>
+    </div>
+
+    <div class="intro">
+        <h2>Why Partner With Me?</h2>
+        <p>
+            <span class="emoji">📊</span> <strong>Data-Driven Strategy:</strong> My Wharton-trained analytics identify undervalued assets with 94% accuracy<br>
+            <span class="emoji">🛠️</span> <strong>Turnkey Solutions:</strong> From acquisition to furnishing to ongoing management<br>
+            <span class="emoji">🌐</span> <strong>Global Network:</strong> Preferred access to off-market deals through my investor consortium<br>
+        </p>
+    </div>
+
+    <div class="contact">
+        <h2>Elevate Your Portfolio</h2>
+        <p>
+            Ready to transform your real estate into a high-yield asset?<br>
+            Let's discuss how my <span class="highlight">Signature Optimization Program</span> can work for you.
+        </p>
+        <p>
+            <a href="mailto:a20789480@gmail.com" style="color: white; text-decoration: underline;">matthew@luxuryairbnbs.com</a><br>
+            Whatspp: +1 (346) 409-3150<br><br>
+            <em style="opacity: 0.8;">First consultation includes complimentary market analysis</em>
+        </p>
+    </div>
+</body>
+</html>
